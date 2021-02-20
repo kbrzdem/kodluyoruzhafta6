@@ -1,25 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from  "./components/header";
+import UserCard from  "./components/userCard";
+
+
+
+ export const headerLinks = [
+  {
+    "id": 1,
+    "title": "Ana Sayfa",
+    "link": "/"
+  },
+  {
+    "id": 2,
+    "title": "Yazılar",
+    "link": "/blog"
+  },
+  {
+    "id": 3,
+    "title": "Projeler",
+    "link": "/projects"
+  },
+  {
+    "id": 4,
+    "title": "Hakkımda",
+    "link": "/about"
+  }
+]
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header headers={headerLinks} />
+      <main>
+        <UserCard />
+      </main>
+    </>
   );
+
 }
+
 
 export default App;

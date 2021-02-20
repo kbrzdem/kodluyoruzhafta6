@@ -1,10 +1,15 @@
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+figure{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+img {
+ width: 80px;
+ border-radius: 100px ;
+ border: solid 2px rgb(37, 36, 46);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +18,79 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.form-field {
+  font-size: 26px;
+  color: #31293b;
+}
+.input {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgba(243, 236, 236, 0.822);
+  border-radius: 20px ;
+  border: solid 2px rgb(37, 36, 46);
+  color: #591ace;
+  font-size: 26px;
+  margin: 6px;
+  max-height: 40px;
+  
+  text-align: center;
+  outline: 0;
+  
+}
+.input:hover{
+  background-color: rgb(253, 253, 253);
+  
+}
+
+
+.user {
+  align-items: center;
+  color: #14052c;
+  font-size: 25px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:150px ;
+  padding-right: 150px;
+  margin-top: 0%;
+}
+
+.ka {
+  color: #8c0be2;
+  
+}
+
+header {
+  align-items: center;
+  background-color: #b5bac567;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav__item {
+  color: rgb(24, 15, 36);
+  text-decoration: none;
+}
+.nav__item:hover {
+  cursor: pointer;
+  color: rgb(137, 111, 197);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav__item:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+
+main {
+  padding: 30px 30px 30px 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.459);
+    margin-left:auto; 
+    margin-right:auto;
+    display: flex;
+    justify-content: space-between;
+
 }
