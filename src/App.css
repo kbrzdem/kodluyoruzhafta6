@@ -61,26 +61,29 @@ img {
 
 header {
   align-items: center;
-  background-color: #b5bac567;
+  background: linear-gradient(rgb(64, 31, 185),#5f0575);
   color: white;
   display: flex;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
   padding: 20px;
+  
 }
 
 .nav__item {
-  color: rgb(24, 15, 36);
+  color: rgb(0, 0, 0);
   text-decoration: none;
+  
+  
 }
 .nav__item:hover {
   cursor: pointer;
-  color: rgb(137, 111, 197);
+  color: rgb(246, 245, 248);
   
 }
 
 .nav__item:not(:last-of-type) {
-  margin-right: 16px;
+  margin-right: 20px;
 }
 
 
